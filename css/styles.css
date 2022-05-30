@@ -5,40 +5,67 @@
   padding-right: 0;
 }
 
-h3 {
+
+h3, h5 {
   font-family: 'Fraunces', serif;
   font-weight: 900;
   font-size: 3rem;
+}
+h3 {
   color: white;
   letter-spacing: 8px;
   text-align: center;
 }
 
 h5 {
-  font-family: 'Fraunces', serif;
-  font-weight: 900;
-  font-size: 3em;
-  width: 65%;
-  position: relative;
+   position: relative;
+}
+
+  /* Paragrapgh texts */
+
+.info-texts {
+  font-family: 'Barlow', sans-serif;
+  margin-top: -100px;
+  font-size: 1.3rem;
+  color: hsl(232, 10%, 55%);
+  width: 90%;
+}
+
+/* BUTTONS */
+
+.button-all {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  
+}
+    /* Items in #about divs */
+
+.items {
+  padding: 10%;
 }
 
 /* NAVIGATION SECTION */
 
-.header-image {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  object-fit: cover;
-}
-
-.arrow-image {
-  margin-left: 740px;
-  margin-top: 120px;
+#navigation {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
 }
 
 .navigation-container {
-  padding: 3% 7%;
+  padding: 4% 7%;
+}
+
+.arrow-container {
+  display: flex;
+}
+
+.arrow-image {
+  margin: 0 50%;
+  margin-top: 5%;
 }
 
 .navbar-brand {
@@ -50,103 +77,64 @@ h5 {
 }
 
 .nav-btn {
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
+ 
   border-style: none;
   width: 40%;
   background-color: white;
   font-family: 'Fraunces', serif;
   font-weight: bold;
+  font-family: 'Fraunces', serif;
+  font-weight: bold;
+  border-style: none;
 }
 
-/* ABOUT SECTION */
-#about {
-  margin-top: 307px;
+/* Transform Sub-section */
+
+.transform {
+  padding-bottom: 15px;
 }
 
- /* Transform Sub-section */
+.transform-heading {
+  width: 65%;
+}
 
- .transform-heading {
-   font-family: 'Fraunces', serif;
-   font-weight: 900;
-   font-size: 3rem;
-   width: 65%;
-   letter-spacing: px;
- }
-
- .transform-items {
-   /* margin-left: 50px; */
-   padding: 10%;
- }
-
- .transform-text-2 {
-   font-family: 'Barlow', sans-serif;
-   margin-top: -100px;
-   font-size: 1.3rem;
-   color: hsl(232, 10%, 55%);
-   width: 90%;
- }
-
- .transform-btn {
-   text-decoration-color: hsl(51, 100%, 80%);
-   background-color: hsl(51, 170%, 95%);
-   border-top-left-radius: 100px;
-   border-top-right-radius: 100px;
-   border-bottom-right-radius: 100px;
-   border-bottom-left-radius: 100px;
-   font-family: 'Fraunces', serif;
-   font-weight: bold;
-   border-style: none;
-   color: black;
-   padding: 1%;
-   margin-left: 75px;
+.transform-btn {
+  text-decoration-color: hsl(51, 100%, 80%);
+  background-color: hsl(51, 170%, 95%);
+  color: black;
+  padding: 1%;
+  margin-left: 75px;
  }
 
 .transform-egg {
-  background-color: hsl(51, 100%, 49%);
+  background-image: url("../images/desktop/image-transform2.jpg");
+  background-position: center;
+  height: 80vh;
+  background-size: cover;
 }
 
-.egg-image {
-  width: 100%;
-  height: 100%;
-}
 
 /* Stand-out Subsection */
 
 .cup-column {
-  background-color: hsl(7, 99%, 70%);
+  background-image: url("../images/desktop/image-stand-out.jpg");
+  background-position: center;
+  height: 80vh;
+  background-size: cover;
 }
 
-.cup-image {
-  width: 100%;
-}
 
-.stand-out-items {
-  padding: 10%;
+.stand-out {
+  padding-bottom: 15px;
 }
 
 .stand-out-heading {
   width: 80%;
 }
 
-.stand-out-text1 {
-  width:
-  font-family: 'Barlow', sans-serif;
-  margin-top: -100px;
-  font-size: 1.3rem;
-  color: hsl(232, 10%, 55%);
-  width: 90%;
-}
-
 .stand-out-button {
   background-color: hsl(7, 150%, 95%);
   text-decoration-color: hsl(7, 99%, 88%);
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
   border-style: none;
   color: black;
   padding: 1%;
@@ -156,56 +144,49 @@ h5 {
 /* Graphic-design Sub-section */
 
 .grape-column {
-  background-color: ;
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  background-position: center;
+  height: 80vh;
+  background-size: cover;
+  text-align: center;
 }
 
-.grape-image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.main-graphic {
-  position: relative;
-}
 .graphic-heading {
-  margin-top: -200px;
-  margin-left: 225px;
   color: hsl(167, 40%, 24%);
+  position: relative;
+  top: 60%;
 }
 
 .graphic-content {
-  text-align: center;
-  margin-left: 190px;
-  width: 51%;
-  margin-top: 20px;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  top: 61%;
   color: hsl(167, 40%, 24%);
 }
 
+/* Photography sub-section */
+
 .orange-column {
-
-}
-
-.orange-image {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+  background-image: url("../images/desktop/image-photography.jpg");
+  background-position: center;
+  height: 80vh;
+  background-size: cover;
+  text-align: center;
 }
 
 .orange-heading {
-  margin-top: -200px;
-  margin-left: 250px;
-  color:  hsl(198, 62%, 26%);
+  position: relative;
+  top: 60%;
+  color: hsl(198, 62%, 26%);
 }
 
 .orange-content {
-  margin-top: 20px;
-  text-align: center;
+  position: relative;
+  top: 61%;
   width: 50%;
-  margin-left: 190px;
-  color:  hsl(198, 62%, 26%);
+  margin: 0 auto;
+  color: hsl(198, 62%, 26%);
 }
 
 /* TESTIMONIAL SECTION */
@@ -218,8 +199,6 @@ h5 {
 .testimonial-main-heading {
   padding: 3% 2% 2%;
   text-align: center;
-  margin-left: 270px;
-  margin-top: 80px;
   font-size: 1.3rem;
   letter-spacing: 5px;
   color: hsl(210, 4%, 67%);
@@ -228,85 +207,36 @@ h5 {
 .testimonial-row {
   text-align: center;
 }
-/* EMILY */
 
-.emily-image {
+/* Testimonial Images */
+
+.testimonial-image {
   border-radius: 100%;
   margin-bottom: 50px;
 }
 
-.emily-text {
-   width: 65%;
-   margin-left: 90px;
-   font-family: 'Barlow', sans-serif;
-   color:  hsl(212, 27%, 19%);
-   font-weight: 500;
-   line-height: 1.5;
-}
+/* Testimonial comments */
 
-.emily-name {
-   font-family: 'Fraunces', serif;
-   font-weight: bolder;
-   margin-top: 45px;
-}
-
-.emily-position {
-  color: hsl(213, 9%, 39%);
-  font-family: 'Barlow', sans-serif;
-  font-size: 0.8rem;
-}
-
-/* THOMAS */
-
-.thomas-image {
-  border-radius: 100%;
-  margin-bottom: 50px;
-}
-
-.thomas-text {
+.testimonial-text {
   width: 65%;
   margin-left: 90px;
   font-family: 'Barlow', sans-serif;
-  color:  hsl(212, 27%, 19%);
+  color: hsl(212, 27%, 19%);
   font-weight: 500;
   line-height: 1.5;
 }
 
-.thomas-name {
+/* Testimonial Volunteer Names  */
+
+.testimonial-name {
   font-family: 'Fraunces', serif;
   font-weight: bolder;
   margin-top: 45px;
 }
 
-.thomas-position {
-  color: hsl(213, 9%, 39%);
-  font-family: 'Barlow', sans-serif;
-  font-size: 0.8rem;
-}
+/* Testimonial (positions) of people  */
 
-/* JENNIE */
-
-.jennie-image {
-  border-radius: 100%;
-  margin-bottom: 50px;
-}
-
-.jennie-text {
-  width: 65%;
-  margin-left: 90px;
-  font-family: 'Barlow', sans-serif;
-  color:  hsl(212, 27%, 19%);
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.jennie-name {
-  font-family: 'Fraunces', serif;
-  font-weight: bolder;
-  margin-top: 45px;
-}
-
-.jennie-position {
+.office-position {
   color: hsl(213, 9%, 39%);
   font-family: 'Barlow', sans-serif;
   font-size: 0.8rem;
@@ -314,68 +244,34 @@ h5 {
 
 /* PROJECT SECTION */
 
-.bottle-image {
-  width: 100%;
-}
-
-.orange2-image {
-  width: 100%;
-}
-
-.cone-image {
-  width: 100%;
-}
-
-.sugar-image {
+.project-image {
   width: 100%;
 }
 
 /* CONTACT SECTION */
 
 #contact {
-  padding: 9%;
-  background-color:  hsl(168, 34%, 41%);
+  background-color: hsl(168, 34%, 41%);
+  text-align: center;
 }
 
 .bottom-brand-name {
   font-size: 1.5rem;
-  color: hsl(167, 40%,24%);
-  text-align: center;
-  margin-top: -60px;
-  padding-bottom: 20px;
-  margin-left: 220px;
+  color: hsl(167, 40%, 24%);
+  margin: 0 auto;
+  padding-top: 3%;
 }
 
 .links {
-  margin-top: 20px;
-  margin-left: 498px;
+  padding-top: 3%;
 }
 
 .bottom-link {
+  padding: 0 2% 0;
   text-decoration: none;
-  color: hsl(167, 40%,24%);
-  margin-left: 10px;
-  padding-left: 15px;
-}
-
-.attribution {
-  margin-bottom: 0px;
-  margin-left: 350px;
-  background-color: hsl(167, 40%,24%);
-}
-
-.icon-section {
-  margin-left: 540px;
-  margin-top: 50px;
-  margin-bottom: -60px;
+  color: hsl(167, 40%, 24%);
 }
 
 .icons {
-  margin: 0 10px;
-}
-
-@media screen (max-width: 1540px) {
-  h4,h5 {
-    margin-left: px;
-  }
+  padding: 6% 1% 4%;
 }
